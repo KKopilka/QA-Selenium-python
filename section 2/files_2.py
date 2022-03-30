@@ -29,4 +29,3 @@ finally:
   time.sleep(5)
   # закрываем браузер после всех манипуляций
   browser.quit()
-
