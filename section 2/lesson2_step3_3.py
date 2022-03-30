@@ -36,21 +36,3 @@ finally:
     time.sleep(5)
     # закрываем браузер после всех манипуляций
     browser.quit()
-'''
-
-browser = webdriver.Chrome()
-
-browser.get("http://suninjuly.github.io/explicit_wait2.html")
-
-# говорим Selenium проверять в течение 5 секунд, пока кнопка не станет кликабельной
-button = WebDriverWait(browser, 12).until(
-        EC.element_to_be_clickable((By.ID, "book"))
-    )
-button.click()
-#message = browser.find_element_by_id("verify_message")
-
-#assert "successful" in message.text
-
-time.sleep(5)
-
-'''
